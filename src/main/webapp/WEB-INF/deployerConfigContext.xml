@@ -93,13 +93,13 @@
 					| edu.someschool.its.cas.MySpecialHandler here, or you might use one of the handlers provided in the adaptors modules.
 					+-->
 				<bean class="org.jasig.cas.adaptors.jdbc.QueryDatabaseAuthenticationHandler">
-					<property name="dataSource" ref="dataSource"/>
-					<property name="sql" value="${password.sql.query}"/>
+					<property name="dataSource" ref="userStoreDataSource"/>
+					<property name="sql" value="${userStore.password.sql.query}"/>
 					<property name="passwordEncoder">
 						<bean class="au.org.ala.cas.encoding.MyPasswordEncoder">
-							<property name="algorithm" value="${password.encoding.algorithm}"/>
-							<property name="base64Encoding" value="${password.encoding.base64}"/>
-							<property name="salt" value="${password.encoding.salt}"/>
+							<property name="algorithm" value="${userStore.password.encoding.algorithm}"/>
+							<property name="base64Encoding" value="${userStore.password.encoding.base64}"/>
+							<property name="salt" value="${userStore.password.encoding.salt}"/>
 						</bean>
 					</property>
 				</bean>
@@ -122,15 +122,24 @@
 	</bean>
 
 	<!-- User Store Data source definition -->
-	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
-		<property name="driverClassName" value="${jdbc.driverClassName}"/>
-		<property name="url" value="${jdbc.url}"/>
-		<property name="username" value="${jdbc.username}"/>
-		<property name="password" value="${jdbc.password}"/>
-		<property name="initialSize" value="${jdbc.cp.initialSize}"/>
-		<property name="maxActive" value="${jdbc.cp.maxActive}"/>
+	<bean id="userStoreDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="${userStore.db.driverClassName}"/>
+		<property name="jdbcUrl" value="${userStore.db.url}"/>
+		<property name="user" value="${userStore.db.username}"/>
+		<property name="password" value="${userStore.db.password}"/>
+		<property name="idleConnectionTestPeriod" value="${userStore.db.idleConnectionTestPeriod}"/>
+		<property name="automaticTestTable" value="${userStore.db.automaticTestTable}"/>
 	</bean>
-
+	<!--
+	<bean id="userStoreDataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="${userStore.db.driverClassName}"/>
+		<property name="url" value="${userStore.db.url}"/>
+		<property name="username" value="${userStore.db.username}"/>
+		<property name="password" value="${userStore.db.password}"/>
+		<property name="initialSize" value="5"/>
+		<property name="maxActive" value="15"/>
+	</bean>
+	-->
 
 	<!--
 	This bean defines the security roles for the Services Management application.  Simple deployments can use the in-memory version.
@@ -154,8 +163,8 @@
 	 -->
 	<bean id="attributeRepository"
 		class="org.jasig.services.persondir.support.jdbc.MyMultiRowJdbcPersonAttributeDao">
-			<constructor-arg index="0" ref="dataSource" />
-			<constructor-arg index="1" value="${attribute.sql.query}" /> 
+			<constructor-arg index="0" ref="userStoreDataSource" />
+			<constructor-arg index="1" value="${userStore.attribute.sql.query}" /> 
 		<property name="nameValueColumnMappings">
 			<map>
 				<entry key='key'>
