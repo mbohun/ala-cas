@@ -1,3 +1,5 @@
+DROP PROCEDURE IF EXISTS sp_get_user_attributes;
+
 delimiter //
 create procedure sp_get_user_attributes (p_username varchar(30))
 begin
