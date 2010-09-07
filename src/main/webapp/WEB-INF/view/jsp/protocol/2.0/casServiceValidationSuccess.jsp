@@ -2,12 +2,8 @@
 	<cas:authenticationSuccess>
 		<cas:user>${fn:escapeXml(assertion.chainedAuthentications[fn:length(assertion.chainedAuthentications)-1].principal.id)}</cas:user>
 		<cas:attributes> 
-			<c:forEach var="attr" 
-				items="${assertion.chainedAuthentications[fn:length(assertion.chainedAuthentications)-1].principal.attributes}" 
-				varStatus="loopStatus" begin="0" 
-				end="${fn:length(assertion.chainedAuthentications[fn:length(assertion.chainedAuthentications)-1].attributes)-1}" 
-				step="1"> 
-					<cas:${fn:escapeXml(attr.key)}>${fn:escapeXml(attr.value)}</cas:${fn:escapeXml(attr.key)}> 
+			<c:forEach var="attr" items="${assertion.chainedAuthentications[fn:length(assertion.chainedAuthentications)-1].principal.attributes}">
+				<cas:${fn:escapeXml(attr.key)}>${fn:escapeXml(attr.value)}</cas:${fn:escapeXml(attr.key)}> 
 			</c:forEach> 
 		</cas:attributes>
 <c:if test="${not empty pgtIou}">
