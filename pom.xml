@@ -94,6 +94,10 @@
 			<id>ja-sig</id>
 			<url>http://oss.sonatype.org/content/repositories/releases/</url>
 		</repository>
+		<repository>
+			<id>JBoss</id>
+			<url>https://repository.jboss.org/nexus/content/groups/public/</url>
+		</repository>
 	</repositories>
 
 	<build>
