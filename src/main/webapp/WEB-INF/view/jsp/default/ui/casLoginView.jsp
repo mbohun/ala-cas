@@ -56,7 +56,9 @@
 		<div id="column-two" style="width:500px">
 			<div class="section">
                 <p><spring:message code="screen.welcome.security" /></p>
+                <h2><spring:message code="screen.welcome.registered" text="Register"/></h2>
                 <p><spring:message code="screen.welcome.notRegistered" arguments="http://auth.ala.org.au/emmet/selfRegister.html"/></p>
+                <h2><spring:message code="screen.welcome.forgottenpassword" text="Forgotten password ?"/></h2>
                 <p><spring:message code="screen.welcome.forgottenpassword" arguments="http://auth.ala.org.au/emmet/resetMyPassword.html"/></p>
 			</div><!--close section-->
 		</div><!--close column-two-->
