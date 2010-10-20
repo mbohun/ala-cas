@@ -58,7 +58,7 @@
                 <p><spring:message code="screen.welcome.security" /></p>
                 <h2><spring:message code="screen.welcome.registered" text="Register"/></h2>
                 <p><spring:message code="screen.welcome.notRegistered" arguments="http://auth.ala.org.au/emmet/selfRegister.html"/></p>
-                <h2><spring:message code="screen.welcome.forgottenpassword" text="Forgotten password ?"/></h2>
+                <h2><spring:message code="screen.welcome.forgottenpassword.hdr" text="Forgotten password ?"/></h2>
                 <p><spring:message code="screen.welcome.forgottenpassword" arguments="http://auth.ala.org.au/emmet/resetMyPassword.html"/></p>
 			</div><!--close section-->
 		</div><!--close column-two-->
