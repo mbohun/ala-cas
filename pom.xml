@@ -96,6 +96,12 @@
 	</dependencies>
 
 	<repositories>
+        <!-- ALA repository  -->
+        <repository>
+            <id>ala-repository</id>
+            <name>ala-repository</name>
+            <url>http://maven.ala.org.au/repository</url>
+        </repository>
 		<repository>
 			<id>ja-sig</id>
 			<url>http://oss.sonatype.org/content/repositories/releases/</url>
