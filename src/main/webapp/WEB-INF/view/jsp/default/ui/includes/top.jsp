@@ -17,8 +17,8 @@ taglib uri="/tld/ala.tld" prefix="ala" %>
 	<link rel="icon" type="image/x-icon" href="http://www.ala.org.au/wp-content/themes/ala/images/favicon.ico" />
 	<link rel="shortcut icon" type="image/x-icon" href="http://www.ala.org.au/wp-content/themes/ala/images/favicon.ico" />
 
-	<link rel="stylesheet" type="text/css" media="screen" href="http://www.ala.org.au/wp-content/themes/ala/css/sf.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="http://www.ala.org.au/wp-content/themes/ala/css/highlights.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://www.ala.org.au/wp-content/themes/ala/css/sf.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://www.ala.org.au/wp-content/themes/ala/css/highlights.css" />
     <link type="text/css" rel="stylesheet" href="<spring:theme code="standard.custom.css.file" />" />
     <script type="text/javascript" src="js/common_rosters.js"></script>
 
