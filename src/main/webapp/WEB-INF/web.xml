@@ -34,6 +34,12 @@
 		<param-value>false</param-value>
 	</context-param>
 	
+	<!-- The Central Server hosting the CMS -->
+    <context-param>
+        <param-name>centralServer</param-name>
+        <param-value>https://www.ala.org.au</param-value>
+    </context-param>
+	
 	<filter>
 		<filter-name>CAS Client Info Logging Filter</filter-name>
 		<filter-class>com.github.inspektr.common.web.ClientInfoThreadLocalFilter</filter-class>
