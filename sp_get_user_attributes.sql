@@ -1,7 +1,7 @@
 DROP PROCEDURE IF EXISTS sp_get_user_attributes;
 
 delimiter //
-create procedure sp_get_user_attributes (p_username varchar(30))
+create procedure sp_get_user_attributes (p_username varchar(255))
 begin
 select 'email' as 'key', email as 'value' from users where username=p_username
 union select 'firstname' as 'key', firstname as 'value' from users where username=p_username
