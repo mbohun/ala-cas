@@ -6,7 +6,14 @@
 		</div><!--close header-->
 		<div id="column-one" style="width:350px">
 			<div class="section">
-			<form:form method="post" id="fm1" cssClass="fm-v clearfix" commandName="${commandName}" htmlEscape="true">
+            <script type="text/javascript">
+                function setUserNameLc() {
+                    $("input#username").val(function() {
+                        return $("input#username").val().toLowerCase();
+                    });
+                }
+            </script>
+            <form:form method="post" id="fm1" cssClass="fm-v clearfix" commandName="${commandName}" htmlEscape="true" onsubmit="setUserNameLc()">
 			    <form:errors path="*" cssClass="errors" id="status" element="div" />
                 <div class="box fl-panel" id="login">
                 <!-- <spring:message code="screen.welcome.welcome" /> -->
