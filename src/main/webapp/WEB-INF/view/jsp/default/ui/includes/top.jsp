@@ -6,15 +6,15 @@ taglib prefix="spring" uri="http://www.springframework.org/tags" %><%@
 taglib prefix="form" uri="http://www.springframework.org/tags/form" %><%@ 
 taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %><%@
 taglib uri="/tld/ala.tld" prefix="ala" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
-<head profile="http://gmpg.org/xfn/11">
+<!DOCTYPE html> 
+<html dir="ltr" lang="en-US"> 
+<head profile="http://gmpg.org/xfn/11"> 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 	<title>Login | Atlas Living Australia </title>
 
 	<link rel="stylesheet" href="https://www.ala.org.au/wp-content/themes/ala/style.css" type="text/css" media="screen" />
-	<link rel="icon" type="image/x-icon" href="http://www.ala.org.au/wp-content/themes/ala/images/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="https://www.ala.org.au/wp-content/themes/ala/images/favicon.ico" />
 	<link rel="shortcut icon" type="image/x-icon" href="http://www.ala.org.au/wp-content/themes/ala/images/favicon.ico" />
 
 	<link rel="stylesheet" type="text/css" media="screen" href="https://www.ala.org.au/wp-content/themes/ala/css/sf.css" />
