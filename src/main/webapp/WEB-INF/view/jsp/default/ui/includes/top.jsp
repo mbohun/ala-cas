@@ -15,7 +15,7 @@ taglib uri="/tld/ala.tld" prefix="ala" %>
 
 	<link rel="stylesheet" href="https://www.ala.org.au/wp-content/themes/ala/style.css" type="text/css" media="screen" />
 	<link rel="icon" type="image/x-icon" href="https://www.ala.org.au/wp-content/themes/ala/images/favicon.ico" />
-	<link rel="shortcut icon" type="image/x-icon" href="http://www.ala.org.au/wp-content/themes/ala/images/favicon.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://www.ala.org.au/wp-content/themes/ala/images/favicon.ico" />
 
 	<link rel="stylesheet" type="text/css" media="screen" href="https://www.ala.org.au/wp-content/themes/ala/css/sf.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="https://www.ala.org.au/wp-content/themes/ala/css/highlights.css" />
