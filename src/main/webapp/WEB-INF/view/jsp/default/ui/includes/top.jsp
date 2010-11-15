@@ -22,7 +22,7 @@ taglib uri="/tld/ala.tld" prefix="ala" %>
     <link type="text/css" rel="stylesheet" href="<spring:theme code="standard.custom.css.file" />" />
 
     <script type="text/javascript" src="js/common_rosters.js"></script>
-    <script language="JavaScript" type="text/javascript" src="http://www.ala.org.au/wp-content/themes/ala/scripts/jquery-1.4.2.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="https://www.ala.org.au/wp-content/themes/ala/scripts/jquery-1.4.2.min.js"></script>
 
     <meta name='robots' content='noindex,nofollow' />
     <link rel="alternate" type="application/rss+xml" title="Atlas Living Australia NG &raquo; Feed" href="http://www.ala.org.au/feed/" />
