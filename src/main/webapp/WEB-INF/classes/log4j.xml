@@ -82,11 +82,11 @@
     </logger>
 
     <logger name="org.springframework.jdbc">
-        <level value="DEBUG" />
+        <level value="INFO" />
     </logger>
 
     <logger name="org.jasig" additivity="true">
-        <level value="DEBUG" />
+        <level value="INFO" />
         <appender-ref ref="cas" />
     </logger>
 
@@ -96,7 +96,7 @@
         cleartext authentication credentials
     -->
     <logger name="org.jasig.cas.web.flow" additivity="true">
-        <level value="DEBUG" />
+        <level value="INFO" />
         <appender-ref ref="cas" />
     </logger>
 
@@ -105,7 +105,7 @@
       logger to System.out.
     -->
     <root>
-        <level value="DEBUG"/>
+        <level value="WARN"/>
         <appender-ref ref="console"/>
     </root>
 </log4j:configuration>
