@@ -1,3 +1,4 @@
+<c:if test="${empty param.format || param.format != 'minimal'}">
 	<div id="footer">
 		<div id="footer-nav">
 			<ul id="menu-footer-site">
@@ -22,6 +23,7 @@
 			</p>
 		</div>
 	</div><!--close footer-->
+</c:if>
 </div><!--close wrapper-->
 </body>
 </html>
