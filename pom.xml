@@ -17,7 +17,7 @@
         <!-- ALA common UI -->
         <dependency>
             <groupId>au.org.ala</groupId>
-            <artifactId>ala-common-ui</artifactId>
+            <artifactId>ala-header-and-tails</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 		<dependency>
