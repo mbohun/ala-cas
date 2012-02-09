@@ -1,6 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <jsp:directive.include file="includes/top.jsp" />
-    <div id="content">
         <div id="header">
             <h1>Login</h1>
         </div><!--close header-->
@@ -72,5 +71,4 @@
                 <p><spring:message code="screen.welcome.forgottenpassword" arguments="http://auth.ala.org.au/emmet/resetMyPassword.html"/></p>
             </div><!--close section-->
         </div><!--close column-two-->
-    </div><!--close content-->
 <jsp:directive.include file="includes/bottom.jsp" />
