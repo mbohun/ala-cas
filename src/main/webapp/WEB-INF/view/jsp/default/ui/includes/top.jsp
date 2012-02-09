@@ -44,7 +44,7 @@ taglib uri="/tld/ala.tld" prefix="ala" %>
             <div id="breadcrumb">
                 <ul>
                     <li><a href="http://www.ala.org.au">Home</a></li>
-                    <li class="last">Login</li>
+                    <li class="last">Authenication</li>
                 </ul>
             </div>
 </c:if>
