@@ -1,32 +1,32 @@
-#cas form {display:block; margin:0 0 0; padding:0; width:100%; background:#fff;}
-    #cas fieldset {border:0; margin:0; padding:0; float:left; clear:none; width:auto;}
-        #cas fieldset legend {display:none;}
+#cas #content form {display:block; margin:0 0 0; padding:0; width:100%; background:#fff;}
+    #cas #content fieldset {border:0; margin:0; padding:0; float:left; clear:none; width:auto;}
+        #cas #content fieldset legend {display:none;}
 
-        #cas #login {float:left; margin:0 -296px 0 0; padding:15px; width:258px; min-height:15em; background:#eee; position:relative; border:0;}
-        #cas #login:before {line-height:0.1; font-size:1px; background:transparent url("../images/key-point_tr.gif") no-repeat top right; margin:-15px -15px 0 -15px; height:15px; display:block; content:url("../images/key-point_tl.gif");}
-        #cas #login:after {display:block; clear:both; padding-top:15px; line-height:0.1; font-size:1px; content:url("../images/key-point_bl.gif"); margin:-15px; height:8px; background:transparent url("../images/key-point_br.gif") scroll no-repeat bottom right;}
-            #cas #login h2 {border-bottom:1px solid #ddd; padding:3px 0; font:normal 400 17px Georgia, "Times New Roman", Times, serif; color:#333;}
-            #cas #login label {font-size:11px;}
-            #cas #login label span.accesskey {text-decoration:underline;}
-            #cas #login input {letter-spacing:1px;}
-            #cas #login .check input {position:relative; left:-4px; height:auto;}
-            #cas #login .check label {float:none; xwidth:auto; line-height:1.8;}
-            #cas #login .btn-row {position:relative; top:15px; padding-top:10px; border-top:1px solid #ddd;}
-            * html #cas #login .btn-row {top:5px;} /* IE6 */
-            #cas #login .btn-submit {float:none; clear:none; display:inline; letter-spacing:0;}
-            * html #cas #login .btn-submit {background:#ffd;}
-            #cas #login .btn-reset {float:none; clear:none; margin-left:5px; border:0; border-left:1px solid #ddd; background:transparent; color:#777; text-transform:lowercase; letter-spacing:0;}
+        #cas #content #login {float:left; margin:0 -296px 0 0; padding:15px; width:258px; min-height:15em; background:#eee; position:relative; border:0;}
+        #cas #content #login:before {line-height:0.1; font-size:1px; background:transparent url("../images/key-point_tr.gif") no-repeat top right; margin:-15px -15px 0 -15px; height:15px; display:block; content:url("../images/key-point_tl.gif");}
+        #cas #content #login:after {display:block; clear:both; padding-top:15px; line-height:0.1; font-size:1px; content:url("../images/key-point_bl.gif"); margin:-15px; height:8px; background:transparent url("../images/key-point_br.gif") scroll no-repeat bottom right;}
+            #cas #content #login h2 {border-bottom:1px solid #ddd; padding:3px 0; font:normal 400 17px Georgia, "Times New Roman", Times, serif; color:#333;}
+            #cas #content #login label {font-size:11px;}
+            #cas #content #login label span.accesskey {text-decoration:underline;}
+            #cas #content #login input {letter-spacing:1px;}
+            #cas #content #login .check input {position:relative; left:-4px; height:auto;}
+            #cas #content #login .check label {float:none; xwidth:auto; line-height:1.8;}
+            #cas #content #login .btn-row {position:relative; top:15px; padding-top:10px; border-top:1px solid #ddd;}
+            * html #cas #content #login .btn-row {top:5px;} /* IE6 */
+            #cas #content #login .btn-submit {float:none; clear:none; display:inline; letter-spacing:0;}
+            * html #cas #content #login .btn-submit {background:#ffd;}
+            #cas #content #login .btn-reset {float:none; clear:none; margin-left:5px; border:0; border-left:1px solid #ddd; background:transparent; color:#777; text-transform:lowercase; letter-spacing:0;}
 
-    #cas #sidebar {float:left; margin-left:296px; padding:18px 15px;}
-        #cas #sidebar h3 {font:normal 400 14px Georgia, "Times New Roman", Times, serif; color:#555; margin:18px 0 0; padding:6px 0 3px;}
-        #cas #sidebar p {margin:0 0 18px; padding:0; color:#555; font-size:1.1em;}
+    #cas #content #sidebar {float:left; margin-left:296px; padding:18px 15px;}
+        #cas #content #sidebar h3 {font:normal 400 14px Georgia, "Times New Roman", Times, serif; color:#555; margin:18px 0 0; padding:6px 0 3px;}
+        #cas #content #sidebar p {margin:0 0 18px; padding:0; color:#555; font-size:1.1em;}
 
-        #cas #list-languages ul {margin:0; padding:0; line-height:1.5; list-style:none;}
-            #cas #list-languages ul li {display:inline; padding:0 5px; border-right:1px solid #ccc;}
-            #cas #list-languages ul li.first {padding-left:0;}
-            #cas #list-languages ul li.last {padding-right:0; border:0;}
+        #cas #content #list-languages ul {margin:0; padding:0; line-height:1.5; list-style:none;}
+            #cas #content #list-languages ul li {display:inline; padding:0 5px; border-right:1px solid #ccc;}
+            #cas #content #list-languages ul li.first {padding-left:0;}
+            #cas #content #list-languages ul li.last {padding-right:0; border:0;}
 
-#cas #footer p {margin:0 0 1em 0; padding:0;}
+#cas #content #footer p {margin:0 0 1em 0; padding:0;}
 
 /* RESET --------------------------------- */
 /* reset some properties for elements since defaults are not crossbrowser - http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/ */
