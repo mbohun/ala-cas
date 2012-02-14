@@ -81,7 +81,7 @@ public final class LogoutController extends AbstractController {
         if (url != null) {
             return new ModelAndView(new RedirectView(url));
         } else {
-            return new ModelAndView(this.logoutView);
+            return new ModelAndView(new RedirectView("http://www.ala.org.au"));
         }
     }
 
