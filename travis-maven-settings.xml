@@ -5,7 +5,7 @@
 
   <servers>
     <server>
-      <id>maven-ala-org-au</id>
+      <id>ala-repository</id>
       <username>${env.TRAVIS_DEPLOY_USERNAME}</username>
       <password>${env.TRAVIS_DEPLOY_PASSWORD}</password>
       <filePermissions>664</filePermissions>
@@ -25,7 +25,7 @@
       </activation>
       <repositories>
         <repository>
-          <id>maven-ala-org-au</id>
+          <id>ala-repository</id>
           <name>ALA Maven Repository</name>
           <url>http://maven.ala.org.au/repository</url>
         </repository>
