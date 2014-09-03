@@ -1,0 +1,40 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+			      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <servers>
+    <server>
+      <id>maven-ala-org-au</id>
+      <username>${env.TRAVIS_DEPLOY_USERNAME}</username>
+      <password>${env.TRAVIS_DEPLOY_PASSWORD}</password>
+      <filePermissions>664</filePermissions>
+      <directoryPermissions>775</directoryPermissions>
+      <configuration></configuration>
+    </server>
+  </servers>
+
+  <profiles>
+    <profile>
+      <id>ALA</id>
+      <properties>
+        <ala.repository.url>scp://maven.ala.org.au/data/maven</ala.repository.url>
+      </properties>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <repositories>
+        <repository>
+          <id>maven-ala-org-au</id>
+          <name>ALA Maven Repository</name>
+          <url>http://maven.ala.org.au/repository</url>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+
+  <activeProfiles>
+    <activeProfile>ALA</activeProfile>
+  </activeProfiles>
+
+</settings>
