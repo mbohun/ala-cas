@@ -4,6 +4,10 @@
 			      http://maven.apache.org/xsd/settings-1.0.0.xsd">
 
   <servers>
+    <!-- TODO: this is only a NOTE for now.
+	 (ala-repository/scp://maven.ala.org.au/data/maven) ssh is at the moment *NOT* accessible
+	 from outside of the CSIRO network.
+    -->
     <server>
       <id>ala-repository</id>
       <username>${env.TRAVIS_DEPLOY_USERNAME}</username>
@@ -12,6 +16,7 @@
       <directoryPermissions>775</directoryPermissions>
       <configuration></configuration>
     </server>
+
   </servers>
 
   <profiles>
