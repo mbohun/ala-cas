@@ -17,6 +17,15 @@
       <configuration></configuration>
     </server>
 
+    <!-- NOTE: this is to test deployment of build artifact-s from travis-ci.org into
+	 a sonatype nexus maven repo hosted on a nectar vm.
+    -->
+    <server>
+      <id>nectar-nexus-repo-test</id>
+      <username>deployment</username>
+      <password>deployment123</password>
+    </server>
+
   </servers>
 
   <profiles>
